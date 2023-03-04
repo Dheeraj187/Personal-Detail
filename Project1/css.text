@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    background-color: rgb(250, 250, 250);
+}
+.silde-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    width: 320%;
+    border-radius: 25px;
+    background-color: #000000;
+}
+.image-content,
+.card-contents{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+   padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    /* border-radius: 25px; */
+    padding: 25px 0 ;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: goldenrod;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+     right: 0; 
+    bottom: -40px;
+    height: 40px;
+ width: 40px;
+ background-color: goldenrod;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: whitesmoke;   
+}
+
+.card-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 3px;
+} 
+.card-image .card-img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid goldenrod
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color:goldenrod;
+}
+.discrition{
+    font-size: 15px;
+    color:gray;
+    text-align: center;
+}
+.button{
+    font-size: 17px;
+    color:rgb(0, 0, 0);
+    border-radius: 10%;
+    padding: 8px 8px;
+    background-color: goldenrod;
+    border-color: aqua;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button:hover{
+    color:rgb(184, 38, 38);
+}
